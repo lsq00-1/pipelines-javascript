@@ -5,6 +5,10 @@
 
 trigger:
 - master
+- task: Xcode@5
+  inputs:
+    actions: 'build'
+    packageApp: false
 
 pool:
   vmImage: ubuntu-latest
